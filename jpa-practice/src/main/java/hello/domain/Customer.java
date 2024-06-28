@@ -22,6 +22,12 @@ public class Customer {
         this.lastName = lastName;
     }
 
+    public Customer(final Long id, final String firstName, final String lastName) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
     public Long getId() {
         return id;
     }
@@ -32,5 +38,10 @@ public class Customer {
 
     public String getLastName() {
         return lastName;
+    }
+
+    public void updateName(final String newFirstName, final String newLastName) {
+        firstName = newFirstName;
+        lastName = newLastName;
     }
 }
